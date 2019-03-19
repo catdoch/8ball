@@ -1,11 +1,10 @@
 package main
 
 import (
-	//"fmt"
 	"html/template"
 	"io/ioutil"
-	"net/http"
 	"log"
+	"net/http"
 )
 
 type Page struct {
@@ -24,6 +23,7 @@ func loadPage(title string) (*Page, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	return &Page{Title: title, Body: body}, nil
 }
 
@@ -68,5 +68,5 @@ func main() {
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
 	http.HandleFunc("/save/", saveHandler)
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8088", nil)
 }

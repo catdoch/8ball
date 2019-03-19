@@ -15,7 +15,6 @@ func main() {
 		"go for dinner",
 		"find something more exciting than this...",
 		"Go for a run",
-		"Hire Cat, hear she's great",
 	}
 
 	n := rand.Intn(len(things))

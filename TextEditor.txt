@@ -1,0 +1,1 @@
+Go is  a hard language and very hard to edit.
